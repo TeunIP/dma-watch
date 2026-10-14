@@ -1,0 +1,558 @@
+[
+ {
+  "key": "btc",
+  "kraken": "XBTUSD"
+ },
+ {
+  "key": "xrp",
+  "kraken": "XRPUSD"
+ },
+ {
+  "key": "eth",
+  "kraken": "ETHUSD"
+ },
+ {
+  "key": "pump",
+  "kraken": "PUMPUSD"
+ },
+ {
+  "key": "amzn",
+  "yahoo": "AMZN"
+ },
+ {
+  "key": "ttwo",
+  "yahoo": "TTWO"
+ },
+ {
+  "key": "shell",
+  "yahoo": "SHELL.AS"
+ },
+ {
+  "key": "cndt",
+  "yahoo": "CNDT"
+ },
+ {
+  "key": "avr",
+  "yahoo": "AVR"
+ },
+ {
+  "key": "imrx",
+  "yahoo": "IMRX"
+ },
+ {
+  "key": "patk",
+  "yahoo": "PATK"
+ },
+ {
+  "key": "tmq",
+  "yahoo": "TMQ"
+ },
+ {
+  "key": "usar",
+  "yahoo": "USAR"
+ },
+ {
+  "key": "z",
+  "yahoo": "Z"
+ },
+ {
+  "key": "peng",
+  "yahoo": "PENG"
+ },
+ {
+  "key": "aaoi",
+  "yahoo": "AAOI"
+ },
+ {
+  "key": "now",
+  "yahoo": "NOW"
+ },
+ {
+  "key": "sol",
+  "kraken": "SOLUSD"
+ },
+ {
+  "key": "avax",
+  "kraken": "AVAXUSD"
+ },
+ {
+  "key": "bnb",
+  "kraken": "BNBUSD"
+ },
+ {
+  "key": "apt",
+  "kraken": "APTUSD"
+ },
+ {
+  "key": "op",
+  "kraken": "OPUSD"
+ },
+ {
+  "key": "arb",
+  "kraken": "ARBUSD"
+ },
+ {
+  "key": "pol",
+  "kraken": "POLUSD"
+ },
+ {
+  "key": "xlm",
+  "kraken": "XLMUSD"
+ },
+ {
+  "key": "link",
+  "kraken": "LINKUSD"
+ },
+ {
+  "key": "ondo",
+  "kraken": "ONDOUSD"
+ },
+ {
+  "key": "cc",
+  "kraken": "CCUSD"
+ },
+ {
+  "key": "blk",
+  "yahoo": "BLK"
+ },
+ {
+  "key": "secz",
+  "yahoo": "SECZ"
+ },
+ {
+  "key": "btgo",
+  "yahoo": "BTGO"
+ },
+ {
+  "key": "crcl",
+  "yahoo": "CRCL"
+ },
+ {
+  "key": "figr",
+  "yahoo": "FIGR"
+ },
+ {
+  "key": "coin",
+  "yahoo": "COIN"
+ },
+ {
+  "key": "hood",
+  "yahoo": "HOOD"
+ },
+ {
+  "key": "jpm",
+  "yahoo": "JPM"
+ },
+ {
+  "key": "gs",
+  "yahoo": "GS"
+ },
+ {
+  "key": "bk",
+  "yahoo": "BK"
+ },
+ {
+  "key": "ben",
+  "yahoo": "BEN"
+ },
+ {
+  "key": "ivz",
+  "yahoo": "IVZ"
+ },
+ {
+  "key": "wt",
+  "yahoo": "WT"
+ },
+ {
+  "key": "cme",
+  "yahoo": "CME"
+ },
+ {
+  "key": "br",
+  "yahoo": "BR"
+ },
+ {
+  "key": "spcx",
+  "yahoo": "SPCX"
+ },
+ {
+  "key": "googl",
+  "yahoo": "GOOGL"
+ },
+ {
+  "key": "nvda",
+  "yahoo": "NVDA"
+ },
+ {
+  "key": "tsla",
+  "yahoo": "TSLA"
+ },
+ {
+  "key": "rklb",
+  "yahoo": "RKLB"
+ },
+ {
+  "key": "fly",
+  "yahoo": "FLY"
+ },
+ {
+  "key": "pl",
+  "yahoo": "PL"
+ },
+ {
+  "key": "lunr",
+  "yahoo": "LUNR"
+ },
+ {
+  "key": "sidu",
+  "yahoo": "SIDU"
+ },
+ {
+  "key": "voyg",
+  "yahoo": "VOYG"
+ },
+ {
+  "key": "rdw",
+  "yahoo": "RDW"
+ },
+ {
+  "key": "mda",
+  "yahoo": "MDA.TO"
+ },
+ {
+  "key": "krmn",
+  "yahoo": "KRMN"
+ },
+ {
+  "key": "ho",
+  "yahoo": "HO.PA"
+ },
+ {
+  "key": "air",
+  "yahoo": "AIR.PA"
+ },
+ {
+  "key": "vsat",
+  "yahoo": "VSAT"
+ },
+ {
+  "key": "oklo",
+  "yahoo": "OKLO"
+ },
+ {
+  "key": "smr",
+  "yahoo": "SMR"
+ },
+ {
+  "key": "gfuz",
+  "yahoo": "GFUZ"
+ },
+ {
+  "key": "djt",
+  "yahoo": "DJT"
+ },
+ {
+  "key": "msft",
+  "yahoo": "MSFT"
+ },
+ {
+  "key": "eni",
+  "yahoo": "ENI.MI"
+ },
+ {
+  "key": "cvx",
+  "yahoo": "CVX"
+ },
+ {
+  "key": "nue",
+  "yahoo": "NUE"
+ },
+ {
+  "key": "dom",
+  "yahoo": "D"
+ },
+ {
+  "key": "rwe",
+  "yahoo": "RWE.DE"
+ },
+ {
+  "key": "fujik",
+  "yahoo": "5803.T"
+ },
+ {
+  "key": "furuk",
+  "yahoo": "5801.T"
+ },
+ {
+  "key": "wst",
+  "yahoo": "688122.SS"
+ },
+ {
+  "key": "enr",
+  "yahoo": "ENR.DE"
+ },
+ {
+  "key": "kie",
+  "yahoo": "KIE.L"
+ },
+ {
+  "key": "cohr",
+  "yahoo": "COHR"
+ },
+ {
+  "key": "ceg",
+  "yahoo": "CEG"
+ },
+ {
+  "key": "ccj",
+  "yahoo": "CCJ"
+ },
+ {
+  "key": "ora",
+  "yahoo": "ORA"
+ },
+ {
+  "key": "besi",
+  "yahoo": "BESI.AS"
+ },
+ {
+  "key": "amat",
+  "yahoo": "AMAT"
+ },
+ {
+  "key": "asmpt",
+  "yahoo": "0522.HK"
+ },
+ {
+  "key": "lrcx",
+  "yahoo": "LRCX"
+ },
+ {
+  "key": "asx",
+  "yahoo": "ASX"
+ },
+ {
+  "key": "amkr",
+  "yahoo": "AMKR"
+ },
+ {
+  "key": "advantest",
+  "yahoo": "6857.T"
+ },
+ {
+  "key": "avgo",
+  "yahoo": "AVGO"
+ },
+ {
+  "key": "lite",
+  "yahoo": "LITE"
+ },
+ {
+  "key": "mrvl",
+  "yahoo": "MRVL"
+ },
+ {
+  "key": "glw",
+  "yahoo": "GLW"
+ },
+ {
+  "key": "mp",
+  "yahoo": "MP"
+ },
+ {
+  "key": "lyc",
+  "yahoo": "LYC.AX"
+ },
+ {
+  "key": "ilu",
+  "yahoo": "ILU.AX"
+ },
+ {
+  "key": "uuuu",
+  "yahoo": "UUUU"
+ },
+ {
+  "key": "neo",
+  "yahoo": "NEO.TO"
+ },
+ {
+  "key": "solb",
+  "yahoo": "SOLB.BR"
+ },
+ {
+  "key": "umi",
+  "yahoo": "UMI.BR"
+ },
+ {
+  "key": "nre",
+  "yahoo": "600111.SS"
+ },
+ {
+  "key": "rhm",
+  "yahoo": "RHM.DE"
+ },
+ {
+  "key": "ldo",
+  "yahoo": "LDO.MI"
+ },
+ {
+  "key": "saab",
+  "yahoo": "SAAB-B.ST"
+ },
+ {
+  "key": "ba",
+  "yahoo": "BA.L"
+ },
+ {
+  "key": "kog",
+  "yahoo": "KOG.OL"
+ },
+ {
+  "key": "hag",
+  "yahoo": "HAG.DE"
+ },
+ {
+  "key": "chg",
+  "yahoo": "CHG.L"
+ },
+ {
+  "key": "avav",
+  "yahoo": "AVAV"
+ },
+ {
+  "key": "ktos",
+  "yahoo": "KTOS"
+ },
+ {
+  "key": "ibm",
+  "yahoo": "IBM"
+ },
+ {
+  "key": "qnt",
+  "yahoo": "QNT"
+ },
+ {
+  "key": "ionq",
+  "yahoo": "IONQ"
+ },
+ {
+  "key": "rgti",
+  "yahoo": "RGTI"
+ },
+ {
+  "key": "qbts",
+  "yahoo": "QBTS"
+ },
+ {
+  "key": "hon",
+  "yahoo": "HON"
+ },
+ {
+  "key": "keys",
+  "yahoo": "KEYS"
+ },
+ {
+  "key": "gev",
+  "yahoo": "GEV"
+ },
+ {
+  "key": "rr",
+  "yahoo": "RR.L"
+ },
+ {
+  "key": "hitachi",
+  "yahoo": "6501.T"
+ },
+ {
+  "key": "bwxt",
+  "yahoo": "BWXT"
+ },
+ {
+  "key": "leu",
+  "yahoo": "LEU"
+ },
+ {
+  "key": "unitree",
+  "yahoo": "688836.SS"
+ },
+ {
+  "key": "ubtech",
+  "yahoo": "9880.HK"
+ },
+ {
+  "key": "hyundai",
+  "yahoo": "005380.KS"
+ },
+ {
+  "key": "hds",
+  "yahoo": "6324.T"
+ },
+ {
+  "key": "nabtesco",
+  "yahoo": "6268.T"
+ },
+ {
+  "key": "thk",
+  "yahoo": "6481.T"
+ },
+ {
+  "key": "sha0",
+  "yahoo": "SHA0.DE"
+ },
+ {
+  "key": "asml",
+  "yahoo": "ASML.AS"
+ },
+ {
+  "key": "aalb",
+  "yahoo": "AALB.AS"
+ },
+ {
+  "key": "atco",
+  "yahoo": "ATCO-A.ST"
+ },
+ {
+  "key": "entg",
+  "yahoo": "ENTG"
+ },
+ {
+  "key": "jen",
+  "yahoo": "JEN.DE"
+ },
+ {
+  "key": "tsm",
+  "yahoo": "TSM"
+ },
+ {
+  "key": "ssnlf",
+  "yahoo": "005930.KS"
+ },
+ {
+  "key": "hynix",
+  "yahoo": "000660.KS"
+ },
+ {
+  "key": "intc",
+  "yahoo": "INTC"
+ },
+ {
+  "key": "mu",
+  "yahoo": "MU"
+ },
+ {
+  "key": "smic",
+  "yahoo": "0981.HK"
+ },
+ {
+  "key": "canon",
+  "yahoo": "7751.T"
+ },
+ {
+  "key": "nikon",
+  "yahoo": "7731.T"
+ },
+ {
+  "key": "klac",
+  "yahoo": "KLAC"
+ }
+]
