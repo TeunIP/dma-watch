@@ -4,6 +4,11 @@
 Reads assets.json, downloads daily closes (Kraken for crypto, Yahoo Finance for
 everything else), computes the 50- and 200-day simple moving averages from
 completed daily closes only, and writes data/latest.json.
+
+A daily close counts as completed for crypto once its UTC day has ended, and
+for a stock once its exchange's regular session of that day has ended (plus a
+20-minute margin for the closing auction), so a run after the US close also
+includes that day's European, Asian and US closes.
 """
 import json, time, datetime as dt, urllib.request, urllib.error
 
@@ -46,11 +51,19 @@ def yahoo(sym):
     tz = dt.timezone(dt.timedelta(seconds=meta.get("gmtoffset", 0)))
     closes = res["indicators"]["quote"][0]["close"]
     rows = [(dt.datetime.fromtimestamp(t, tz).date(), c) for t, c in zip(res["timestamp"], closes) if c is not None]
+    # Keep a bar only when its session is over: earlier exchange-local dates always,
+    # today's bar only after today's regular session has ended (plus 20 minutes).
+    now = time.time()
+    local_today = dt.datetime.fromtimestamp(now, tz).date()
+    reg = (meta.get("currentTradingPeriod") or {}).get("regular") or {}
+    end = reg.get("end")
+    closed_today = bool(end) and dt.datetime.fromtimestamp(end, tz).date() == local_today and now >= end + 1200
+    rows = [(d, c) for d, c in rows if d < local_today or (d == local_today and closed_today)]
     return rows, meta.get("currency")
 
 
-def summarise(rows):
-    rows = sorted({d: c for d, c in rows if d < TODAY}.items())
+def summarise(rows, crypto=False):
+    rows = sorted({d: c for d, c in rows if not crypto or d < TODAY}.items())
     if not rows:
         raise RuntimeError("no completed daily closes")
     cl = [c for _, c in rows]
@@ -67,7 +80,7 @@ def main():
         k = a["key"]
         try:
             if "kraken" in a:
-                r = summarise(kraken(a["kraken"])); r["source"] = "kraken:" + a["kraken"]
+                r = summarise(kraken(a["kraken"]), crypto=True); r["source"] = "kraken:" + a["kraken"]
             else:
                 rows, cur = yahoo(a["yahoo"]); r = summarise(rows)
                 r["source"] = "yahoo:" + a["yahoo"]; r["currency"] = cur
