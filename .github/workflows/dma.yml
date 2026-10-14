@@ -2,7 +2,9 @@ name: DMA Watch fetch
 
 on:
   schedule:
-    - cron: "15 4 * * 4"   # Thursday 04:15 UTC, before European markets open
+    - cron: "30 5 * * 1-5"    # weekdays 05:30 UTC (07:30 CEST / 06:30 CET), before the EU open
+    - cron: "20 20 * * 1-5"   # weekdays 20:20 UTC, after the US close in summer time (22:20 CEST)
+    - cron: "20 21 * * 1-5"   # weekdays 21:20 UTC, after the US close in winter time (22:20 CET)
   workflow_dispatch:        # "Run workflow" button for manual runs
 
 permissions:
