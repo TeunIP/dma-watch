@@ -2,13 +2,15 @@ name: DMA Watch fetch
 
 on:
   schedule:
-    - cron: "30 5 * * 1-5"    # weekdays 05:30 UTC (07:30 CEST / 06:30 CET), before the EU open
-    - cron: "20 20 * * 1-5"   # weekdays 20:20 UTC, after the US close in summer time (22:20 CEST)
-    - cron: "20 21 * * 1-5"   # weekdays 21:20 UTC, after the US close in winter time (22:20 CET)
+    - cron: "17 */2 * * *"    # every 2 hours; GitHub often starts scheduled runs hours late, so many tries
   workflow_dispatch:        # "Run workflow" button for manual runs
 
 permissions:
   contents: write
+
+concurrency:                # late runs can pile up; run them one after another
+  group: dma-fetch
+  cancel-in-progress: false
 
 jobs:
   fetch:
