@@ -9,6 +9,9 @@ A daily close counts as completed for crypto once its UTC day has ended, and
 for a stock once its exchange's regular session of that day has ended (plus a
 20-minute margin for the closing auction), so a run after the US close also
 includes that day's European, Asian and US closes.
+
+data/latest.json is only rewritten when a close or an error changed, so
+"generatedAt" is the time of the last change, not of the last check.
 """
 import json, time, datetime as dt, urllib.request, urllib.error
 
@@ -74,8 +77,16 @@ def summarise(rows, crypto=False):
 
 
 def main():
+    # The previous output is the fallback: an asset never goes back to an older close
+    # (Yahoo sometimes leaves out the latest European bar in the hours after midnight),
+    # and an asset that fails this run keeps its last good values (listed in "errors").
+    try:
+        old = json.load(open("data/latest.json"))
+    except Exception:
+        old = {}
+    prev = old.get("assets", {})
     assets = json.load(open("assets.json"))
-    out, errors = {}, {}
+    out, errors, kept = {}, {}, []
     for a in assets:
         k = a["key"]
         try:
@@ -84,16 +95,25 @@ def main():
             else:
                 rows, cur = yahoo(a["yahoo"]); r = summarise(rows)
                 r["source"] = "yahoo:" + a["yahoo"]; r["currency"] = cur
+            p = prev.get(k)
+            if p and p.get("source") == r["source"] and p.get("dataDate", "") > r["dataDate"]:
+                r = p; kept.append(k)
             out[k] = r
         except Exception as e:
             errors[k] = f"{type(e).__name__}: {e}"[:200]
+            if k in prev:
+                out[k] = prev[k]
         time.sleep(0.4)  # be polite
+    new = dict(count=len(out), assets=out, errors=errors, kept=kept)
+    if old and all(old.get(x) == v for x, v in new.items()):
+        print(f"unchanged: {len(out)} assets, errors {sorted(errors)}, kept {kept}")
+        return  # nothing new, so no commit
     doc = dict(generatedAt=dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
-               runDate=TODAY.isoformat(), count=len(out), assets=out, errors=errors)
+               runDate=TODAY.isoformat(), **new)
     import os
     os.makedirs("data", exist_ok=True)
     json.dump(doc, open("data/latest.json", "w"), indent=1)
-    print(f"ok {len(out)}, errors {len(errors)}: {sorted(errors)}")
+    print(f"ok {len(out)}, errors {len(errors)}: {sorted(errors)}, kept {kept}")
 
 
 if __name__ == "__main__":
