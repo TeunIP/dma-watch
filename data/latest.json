@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-24T04:40:54+00:00",
+ "generatedAt": "2026-10-24T11:05:40+00:00",
  "runDate": "2026-10-24",
  "count": 139,
  "assets": {
@@ -4299,29 +4299,5 @@
   }
  },
  "errors": {},
- "kept": [
-  "shell",
-  "ho",
-  "air",
-  "eni",
-  "rwe",
-  "enr",
-  "kie",
-  "besi",
-  "solb",
-  "umi",
-  "rhm",
-  "ldo",
-  "saab",
-  "ba",
-  "kog",
-  "hag",
-  "chg",
-  "rr",
-  "sha0",
-  "asml",
-  "aalb",
-  "atco",
-  "jen"
- ]
+ "kept": []
 }
