@@ -554,5 +554,217 @@
  {
   "key": "klac",
   "yahoo": "KLAC"
+ },
+ {
+  "key": "ad",
+  "yahoo": "AD.AS"
+ },
+ {
+  "key": "ca",
+  "yahoo": "CA.PA"
+ },
+ {
+  "key": "tsco",
+  "yahoo": "TSCO.L"
+ },
+ {
+  "key": "jmt",
+  "yahoo": "JMT.LS"
+ },
+ {
+  "key": "wmt",
+  "yahoo": "WMT"
+ },
+ {
+  "key": "cost",
+  "yahoo": "COST"
+ },
+ {
+  "key": "kr",
+  "yahoo": "KR"
+ },
+ {
+  "key": "sfm",
+  "yahoo": "SFM"
+ },
+ {
+  "key": "nesn",
+  "yahoo": "NESN.SW"
+ },
+ {
+  "key": "bn",
+  "yahoo": "BN.PA"
+ },
+ {
+  "key": "micc",
+  "yahoo": "MICC.AS"
+ },
+ {
+  "key": "heia",
+  "yahoo": "HEIA.AS"
+ },
+ {
+  "key": "pep",
+  "yahoo": "PEP"
+ },
+ {
+  "key": "ko",
+  "yahoo": "KO"
+ },
+ {
+  "key": "mdlz",
+  "yahoo": "MDLZ"
+ },
+ {
+  "key": "gis",
+  "yahoo": "GIS"
+ },
+ {
+  "key": "una",
+  "yahoo": "UNA.AS"
+ },
+ {
+  "key": "or",
+  "yahoo": "OR.PA"
+ },
+ {
+  "key": "bei",
+  "yahoo": "BEI.DE"
+ },
+ {
+  "key": "rkt",
+  "yahoo": "RKT.L"
+ },
+ {
+  "key": "pg",
+  "yahoo": "PG"
+ },
+ {
+  "key": "cl",
+  "yahoo": "CL"
+ },
+ {
+  "key": "kmb",
+  "yahoo": "KMB"
+ },
+ {
+  "key": "loup",
+  "yahoo": "LOUP.PA"
+ },
+ {
+  "key": "cwk",
+  "yahoo": "CWK.L"
+ },
+ {
+  "key": "mowi",
+  "yahoo": "MOWI.OL"
+ },
+ {
+  "key": "emmn",
+  "yahoo": "EMMN.SW"
+ },
+ {
+  "key": "calm",
+  "yahoo": "CALM"
+ },
+ {
+  "key": "vitl",
+  "yahoo": "VITL"
+ },
+ {
+  "key": "tsn",
+  "yahoo": "TSN"
+ },
+ {
+  "key": "ppc",
+  "yahoo": "PPC"
+ },
+ {
+  "key": "sap",
+  "yahoo": "SAP.TO"
+ },
+ {
+  "key": "ffarm",
+  "yahoo": "FFARM.AS"
+ },
+ {
+  "key": "szu",
+  "yahoo": "SZU.DE"
+ },
+ {
+  "key": "rin",
+  "yahoo": "RIN.PA"
+ },
+ {
+  "key": "adm",
+  "yahoo": "ADM"
+ },
+ {
+  "key": "bg",
+  "yahoo": "BG"
+ },
+ {
+  "key": "agro",
+  "yahoo": "AGRO"
+ },
+ {
+  "key": "land",
+  "yahoo": "LAND"
+ },
+ {
+  "key": "yar",
+  "yahoo": "YAR.OL"
+ },
+ {
+  "key": "bayn",
+  "yahoo": "BAYN.DE"
+ },
+ {
+  "key": "sdf",
+  "yahoo": "SDF.DE"
+ },
+ {
+  "key": "de",
+  "yahoo": "DE"
+ },
+ {
+  "key": "ntr",
+  "yahoo": "NTR"
+ },
+ {
+  "key": "cf",
+  "yahoo": "CF"
+ },
+ {
+  "key": "ctva",
+  "yahoo": "CTVA"
+ },
+ {
+  "key": "upm",
+  "yahoo": "UPM.HE"
+ },
+ {
+  "key": "sterv",
+  "yahoo": "STERV.HE"
+ },
+ {
+  "key": "sca",
+  "yahoo": "SCA-B.ST"
+ },
+ {
+  "key": "holm",
+  "yahoo": "HOLM-B.ST"
+ },
+ {
+  "key": "wy",
+  "yahoo": "WY"
+ },
+ {
+  "key": "wfg",
+  "yahoo": "WFG"
+ },
+ {
+  "key": "ufpi",
+  "yahoo": "UFPI"
  }
 ]
