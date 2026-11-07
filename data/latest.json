@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-07T08:51:17+00:00",
+ "generatedAt": "2026-11-07T16:30:15+00:00",
  "runDate": "2026-11-07",
  "count": 192,
  "assets": {
@@ -5942,13 +5942,5 @@
   }
  },
  "errors": {},
- "kept": [
-  "kie",
-  "ba",
-  "chg",
-  "rr",
-  "tsco",
-  "rkt",
-  "cwk"
- ]
+ "kept": []
 }
